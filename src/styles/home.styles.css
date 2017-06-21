@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css?family=Inconsolata|Roboto+Mono');
+
+
+#home
+{
+   height: 100vh;
+   position: absolute;
+   display:block;
+   top: 0px;
+   left: 0px;
+   right: 0px;
+   bottom: 0px;
+   overflow: hidden; 
+}
+
+#home > div{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+#home > #layer1 {
+  background-image: url("../img/dax.jpg");
+  mix-blend-mode: none;
+  left: 40%;
+  right: auto;
+  width: 100%;
+  animation: roll 60s linear infinite;
+}
+
+#home > #layer2 {
+  background-image: url('../img/SuitManFilled.jpg'); 
+  mix-blend-mode: lighten;
+}
+
+#home > #layer3 {
+  background-image: url('../img/SuitManTransparent.png'); 
+  mix-blend-mode: multiply;
+}
+
+@-moz-keyframes roll {
+  50% {
+    -webkit-transform: translate(-40%, 0);
+    -moz-transform: translate(-40%, 0);
+    -ms-transform: translate(-40%, 0);
+    -o-transform: translate(-40%, 0);
+    transform: translate(-40%, 0);
+  }
+  100% {
+    -webkit-transform: translate(0%, 0);
+    -moz-transform: translate(0%, 0);
+    -ms-transform: translate(0%, 0);
+    -o-transform: translate(0%, 0);
+    transform: translate(0%, 0);
+  }
+}
+@-ms-keyframes roll {
+  50% {
+    -webkit-transform: translate(-40%, 0);
+    -moz-transform: translate(-40%, 0);
+    -ms-transform: translate(-40%, 0);
+    -o-transform: translate(-40%, 0);
+    transform: translate(-40%, 0);
+  }
+  100% {
+    -webkit-transform: translate(0%, 0);
+    -moz-transform: translate(0%, 0);
+    -ms-transform: translate(0%, 0);
+    -o-transform: translate(0%, 0);
+    transform: translate(0%, 0);
+  }
+}
+@-webkit-keyframes roll {
+  50% {
+    -webkit-transform: translate(-40%, 0);
+    -moz-transform: translate(-40%, 0);
+    -ms-transform: translate(-40%, 0);
+    -o-transform: translate(-40%, 0);
+    transform: translate(-40%, 0);
+  }
+  100% {
+    -webkit-transform: translate(0%, 0);
+    -moz-transform: translate(0%, 0);
+    -ms-transform: translate(0%, 0);
+    -o-transform: translate(0%, 0);
+    transform: translate(0%, 0);
+  }
+}
+@keyframes roll {
+  50% {
+    -webkit-transform: translate(-40%, 0);
+    -moz-transform: translate(-40%, 0);
+    -ms-transform: translate(-40%, 0);
+    -o-transform: translate(-40%, 0);
+    transform: translate(-40%, 0);
+  }
+  100% {
+    -webkit-transform: translate(0%, 0);
+    -moz-transform: translate(0%, 0);
+    -ms-transform: translate(0%, 0);
+    -o-transform: translate(0%, 0);
+    transform: translate(0%, 0);
+  }
+}
+
+
+/*
+  font-family: 'Bungee', cursive;
+  font-family: 'Share Tech Mono', monospace;
+/*
+    TEXT
+*/
+
+
+.flex-container {
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0 1em;
+    margin-top: 7vh;
+}
+
+flex-container> div {
+    display: block;
+}
+
+
+
+.flex-row--align-h-center {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+.flex-row {
+    box-sizing: border-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-bottom: 1em;
+}
+
+
+@media (min-width: 540px) {
+  .flex-container {
+      max-width: 540px;
+  }
+}
+
+@media (min-width: 768px){
+  .flex-container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 992px){
+  .flex-container {
+    max-width: 992px;
+  }
+}
+
+
+@media (min-width: 1200px){
+  .flex-container {
+    max-width: 1200px;
+  }
+}
+
+
+.title{
+  position: relative;
+  top: 1.6em;
+}
+
+#home h1 {
+    font-family: 'Roboto Mono', monospace;
+    text-transform: capitalize;
+    word-wrap: break-word;
+    font-size: 7em;
+    height: 1em;
+    line-height: 3em;
+    z-index: 50;
+    position: relative;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    -webkit-animation: fadeInFromNone 0.6s ease-out;
+    -moz-animation: fadeInFromNone 0.6s ease-out;
+    -o-animation: fadeInFromNone 0.6s ease-out;
+    animation: fadeInFromNone 0.6s ease-out;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+
+#home h2 {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 4em;
+    z-index: 99;
+     height: 1em;
+    line-height: 0em;
+    position: relative;
+    color: white;
+    opacity:0;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    -webkit-animation: fadeInFromNone 1.2s .8s 1 ease-out;
+    -moz-animation: fadeInFromNone 1.2s .8s 1 ease-out;
+    -o-animation: fadeInFromNone 1.2s .8s 1 ease-out;
+    animation: fadeInFromNone 1.2s .8s 1 ease-out;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+
+
+
+@-webkit-keyframes fadeInFromNone {
+    0% {
+        display: none;
+        opacity: 0;
+    }
+
+    1% {
+        display: block;
+        opacity: 0;
+    }
+
+    100% {
+        display: block;
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadeInFromNone {
+    0% {
+        display: none;
+        opacity: 0;
+    }
+
+    1% {
+        display: block;
+        opacity: 0;
+    }
+
+    100% {
+        display: block;
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadeInFromNone {
+    0% {
+        display: none;
+        opacity: 0;
+    }
+
+    1% {
+        display: block;
+        opacity: 0;
+    }
+
+    100% {
+        display: block;
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInFromNone {
+    0% {
+        display: none;
+        opacity: 0;
+    }
+
+    1% {
+        display: block;
+        opacity: 0;
+    }
+
+    100% {
+        display: block;
+        opacity: 1;
+    }
+}
+
+
+
+/*
+2B3587
+Menu control
+*/

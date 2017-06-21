@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>MADE IN NUSLE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+</head>
+<script language="javascript">
+    $(document).ready(function(){
+        $('#nav-icon4').click(function(){
+            $(this).toggleClass('open');
+            $('#nav-menu').toggleClass('open')
+        });
+    });
+</script>
+<body>
+    
+    <div class="header">                 
+            <div class="video-text-container" >
+        	    <video  autoplay playsinline muted loop preload poster="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/oceanshot.jpg">
+                    <source src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/ocean-small.webm" />
+                    <source src="http://thenewcode.com/assets/videos/ocean-small.mp4" />
+                </video>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 285 80" 
+                    preserveAspectRatio="xMidYMid meet">
+                        <defs>
+                            <mask id="mask" x="0" y="0" width="100%" height="100%" >
+                                <rect x="-140" y="-100" width="200%" height="300%" class="whiteBackground" />
+                                <rect x="0" y="0" width="100%" height="100%" class="whiteBackground" />
+                                <text x="72"  y="50" >OCEAN</text>
+                            </mask>
+                        </defs>
+                        <rect x="-140" y="-100" width="200%" height="300%" class="whiteBackground" />
+                    </svg>
+                     <!--<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 285 80" 
+                        preserveAspectRatio="xMidYMid slice">
+                         <defs>
+                            <mask id="mask" x="0" y="0" width="100%" height="100%" >
+                                <rect x="0" y="0" width="100%" height="100%" class="whiteBackground" />
+                                <rect x="72"  y="20" width="50%" height="30%" ></rect>
+                            </mask>
+                        </defs>
+                        <rect x="0" y="0" width="100%" height="100%" class="whiteBackground" />
+                    </svg>-->
+            </div>
+           
+
+            <i class="fa fa-arrow-down" aria-hidden="true"></i>
+             <div class="nav-container">
+                <div id="nav-icon4">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <nav id="nav-menu">
+                <ul class="nav">
+                    <li><a href="#overview">Přehled<a></li>
+                    <li><a href="#team">Team</a></li>
+                    <li><a href="#contact">Kontakt</a></li>
+                </ul>
+            </nav>
+    </div>
+    <div class="main">
+        <h1>main</h1>
+        <i class="fa fa-arrow-down" aria-hidden="true"></i>
+    </div>
+    <div class="team">
+        <h2>Team</h2>
+    </div>
+    <div class="main">
+        <h1>main</h1>
+    </div>
+    <div class="footer">
+        <h5><strong>FOOTER</strong></h5>
+    </div>
+    <div id="app"></div>
+    <script src="/bundle.js"></script>
+</body>
+</html>

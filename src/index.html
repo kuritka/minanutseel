@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>MADE IN NUSLE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+</head>
+<script language="javascript">
+    $(document).ready(function(){
+        $('#nav-icon4').click(function(){
+            $(this).toggleClass('open');
+            $('#nav-menu').toggleClass('open')
+        });
+    });
+</script>
+
+<style xmlns="http://www.w3.org/1999/xhtml" type="text/css" media="screen">
+    
+    svg {
+      display:block;  position:absolute;
+      top:0%; left:0%; width:100%; height:100%; 
+    }
+  </style>
+
+<body>
+    <div class="header">
+            <div class="video-text-container">                 
+            	<video autoplay playsinline muted loop preload poster="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/oceanshot.jpg">
+                    <source src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/ocean-small.webm" />
+                    <source src="http://thenewcode.com/assets/videos/ocean-small.mp4" />
+	            </video>
+            </div> 
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 285 80" preserveAspectRatio="xMidYMid slice">
+                <defs>
+                    <mask id="mask" x="0" y="0" width="100%" height="100%" >
+                            <rect x="0" y="0" width="100%" height="100%" />
+                            <text x="112"  y="24">MADE</text>
+                            <text x="112"  y="44">IN</text>
+                            <text x="112"  y="64">NUSLE</text>
+                    </mask>
+                    <mask id="mask1" x="0" y="0" width="100%" height="100%" >
+                            <rect x="0" y="0" width="100%" height="100%" />
+                            <text x="82"  y="24">MADE</text>
+                            <text x="82"  y="44">IN NUSLE</text>
+                    </mask>
+                     <mask id="mask3" x="0" y="0" width="100%" height="100%" >
+                            <rect x="0" y="0" width="100%" height="100%" />
+                            <text x="40" y="44">MADE IN NUSLE</text>
+                    </mask>
+                </defs>
+                 <rect x="0" y="0" width="100%" height="100%" />
+            </svg>
+             <div class="nav-container">
+                <div id="nav-icon4">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <nav id="nav-menu">
+                <ul class="nav">
+                    <li><a href="#overview">Přehled<a></li>
+                    <li><a href="#team">Team</a></li>
+                    <li><a href="#contact">Kontakt</a></li>
+                </ul>
+            </nav>
+    </div>
+    <div class="main">
+        <h1>main</h1>
+        <i class="fa fa-arrow-down" aria-hidden="true"></i>
+    </div>
+    <div class="team">
+        <h2>Team</h2>
+    </div>
+    <div class="main">
+        <h1>main</h1>
+    </div>
+    <div class="footer">
+        <h5><strong>FOOTER</strong></h5>
+    </div>
+    <div id="app"></div>
+    <script src="/bundle.js"></script>
+</body>
+</html>

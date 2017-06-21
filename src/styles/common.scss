@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Pathway+Gothic+One|Roboto');
+@import url('http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
+// font-family: 'Open Sans', sans-serif;
+// font-family: 'Roboto', sans-serif;
+
+$media-xs: 548px;
+$media-s: 768px;
+$media-m: 932px;
+$media-l: 1280px;
+
+
+$background-color: #00c4c5;
+$background-gradient-from: #00c589;
+$background-gradient-to: #00afb0;
+
+
+* { 
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing:  border-box;
+}
+
+
+html, body {
+  padding: 0;
+  margin: 0;
+}
+
+
+
+/*           HEADER                  */
+.header
+{
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+     background-color: white;
+    // background-color: #00c4c5;
+    // background: linear-gradient(to left top,$background-gradient-from 0,$background-gradient-to 100%);
+    height: 100vh;
+}
+
+
+.video-text-container {
+    margin-top: 0px;
+}
+
+.nav > li > a {
+    padding: 20px 16px;
+    display: block;
+}
+
+
+.nav-container 
+{
+    z-index: 20;
+    position: fixed;
+    right: 0;
+    top: 0;
+    padding:13px;
+}
+
+
+#nav-menu{
+    visibility: hidden;
+}
+#nav-menu.open
+{
+    z-index: 8;
+    font-weight: 300;
+    font-size: 300%;
+    text-transform: uppercase;
+    background-color: white;
+ //   background: linear-gradient(to left top,$background-gradient-from 0,$background-gradient-to 100%);
+    opacity: 0.8;
+    right:0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    visibility:visible;
+}
+
+@media only screen and (min-width: $media-s)
+{
+    .nav-container
+    {
+  //        display: none;
+    }
+
+    nav
+    {
+        display: inline-block;
+    }
+}
+
+
+
+/*      MAIN SECTION        */
+
+
+.main
+{
+    background-size: cover;
+    background-color: white;
+    height: 100vh;
+}
+
+.team
+{
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #00c2cc;
+    background: linear-gradient(to top,#00c2cc 0,#6f95d3 100%);
+    height: 100vh;
+}
+
+
+
+.footer
+{
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #292d35;
+    color: #484d56;
+     height: 80vh;
+}
+
+/*FONTING*/
+h1{
+    font-family: 'Open Sans', sans-serif;
+    position: absolute;
+    color: white;
+    font-weight: 300;
+}
+
+h2{
+    font-family: 'Open Sans', sans-serif;
+}
+
+h5{
+   font-family:  'Pathway Gothic One',sans-serif;
+   font-size: 133px;
+
+}
+
+@media only screen and (max-width: $media-xs){}
+
+@media only screen and (max-width: $media-s){}
+
+@media only screen and (max-width: $media-m){}
+
+@media only screen and (max-width: $media-l){}

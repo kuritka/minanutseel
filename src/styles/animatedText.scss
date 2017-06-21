@@ -1,0 +1,115 @@
+//https://codepen.io/dudleystorey/pen/QvvEYQ
+//Animated text 
+//Example of use is at the bottom¨
+
+$media-xs: 548px;
+$media-s: 768px;
+$media-m: 932px;
+$media-l: 1280px;
+$media-xl: 1280px;
+$media-xxl: 1782px;
+
+
+
+.video-text-container video { 
+      width: 100%;
+      z-index: 1;
+    }
+
+
+
+svg { 
+  width: 100%;
+  position:absolute;
+  top: 0;
+  left: 0; // needed for FF, Safari, Edge
+  height: 100%;
+}
+
+svg text {
+  font-family: Biko, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 21px;
+}
+
+svg rect {
+  fill: white;
+}
+
+svg > rect {
+    -webkit-mask: url(#mask);
+    mask: url(#mask);
+  }
+
+
+@media
+only  screen and (max-aspect-ratio: 8/5)
+{ 
+  .video-text-container > video{
+    display:none;
+  }
+
+  .header{
+    background-image: url('../img/Nusle00.jpg');
+  }
+
+  
+  svg > rect {
+    -webkit-mask: url(#mask);
+    mask: url(#mask);
+  }
+}
+
+
+
+@media only  screen and (max-width: 628px) {
+  svg text {
+    font-size: 15px;
+  }
+
+  svg > rect {
+    -webkit-mask: url(#mask1);
+    mask: url(#mask1);
+  }
+}
+
+@media only  screen and (max-width: 460px) {
+  svg text {
+    font-size: 10px;
+    padding-left: 10px;
+  }
+}
+
+
+
+@media only  screen and (max-height: 240px) {
+  .video-text-container > video{
+    display:none;
+  }
+
+  svg > rect {
+    -webkit-mask: url(#mask3);
+    mask: url(#mask3);
+  }
+}
+
+
+/*
+<header>
+	<video autoplay playsinline muted loop preload poster="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/oceanshot.jpg">
+		<source src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/ocean-small.webm" />
+    <source src="http://thenewcode.com/assets/videos/ocean-small.mp4" />
+	</video>
+ 	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 285 80" preserveAspectRatio="xMidYMid slice">
+    <defs>
+    <mask id="mask" x="0" y="0" width="100%" height="100%" >
+      <rect x="0" y="0" width="100%" height="100%" />
+    <text x="72"  y="50">OCEAN</text>
+      </mask>
+  </defs>
+ <rect x="0" y="0" width="100%" height="100%" />
+  </svg>
+</header>
+
+*/
