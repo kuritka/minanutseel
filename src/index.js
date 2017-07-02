@@ -25,6 +25,10 @@ import './styles/sections/team.scss';
 import './styles/sections/overview.scss';
 
 
+//require('imports?this=>window!./_external/wow.js');
+import './../vendor/wow.js';
+
+
 
 //import './styles/bounceIn.scss';
 
