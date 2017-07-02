@@ -1,0 +1,211 @@
+
+
+
+@keyframes bounceIn {
+    20%, 40%, 60%, 80%, 0%, 100% {
+        -webkit-animation-timing-function: cubic-bezier(.215,.61,.355,1);
+        animation-timing-function: cubic-bezier(.215,.61,.355,1);
+    }
+
+    0% {
+        opacity: 0;
+        -webkit-transform: scale3d(.3,.3,.3);
+        transform: scale3d(.3,.3,.3);
+    }
+
+    20% {
+        -webkit-transform: scale3d(1.1,1.1,1.1);
+        transform: scale3d(1.1,1.1,1.1);
+    }
+
+    40% {
+        -webkit-transform: scale3d(.9,.9,.9);
+        transform: scale3d(.9,.9,.9);
+    }
+
+    60% {
+        opacity: 1;
+        -webkit-transform: scale3d(1.03,1.03,1.03);
+        transform: scale3d(1.03,1.03,1.03);
+    }
+    80% {
+        -webkit-transform: scale3d(.97,.97,.97);
+        transform: scale3d(.97,.97,.97);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: scale3d(1,1,1);
+        transform: scale3d(1,1,1);
+    }
+}
+
+
+
+@-webkit-keyframes bounceIn {
+    20%, 40%, 60%, 80%, 0%, 100% {
+        -webkit-animation-timing-function: cubic-bezier(.215,.61,.355,1);
+        animation-timing-function: cubic-bezier(.215,.61,.355,1);
+    }
+
+    0% {
+        opacity: 0;
+        -webkit-transform: scale3d(.3,.3,.3);
+        transform: scale3d(.3,.3,.3);
+    }
+
+    20% {
+        -webkit-transform: scale3d(1.1,1.1,1.1);
+        transform: scale3d(1.1,1.1,1.1);
+    }
+
+    40% {
+        -webkit-transform: scale3d(.9,.9,.9);
+        transform: scale3d(.9,.9,.9);
+    }
+
+    60% {
+        opacity: 1;
+        -webkit-transform: scale3d(1.03,1.03,1.03);
+        transform: scale3d(1.03,1.03,1.03);
+    }
+    80% {
+        -webkit-transform: scale3d(.97,.97,.97);
+        transform: scale3d(.97,.97,.97);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: scale3d(1,1,1);
+        transform: scale3d(1,1,1);
+    }
+}
+
+
+@-moz-keyframes bounceIn {
+    20%, 40%, 60%, 80%, 0%, 100% {
+        -webkit-animation-timing-function: cubic-bezier(.215,.61,.355,1);
+        animation-timing-function: cubic-bezier(.215,.61,.355,1);
+    }
+
+    0% {
+        opacity: 0;
+        -webkit-transform: scale3d(.3,.3,.3);
+        transform: scale3d(.3,.3,.3);
+    }
+
+    20% {
+        -webkit-transform: scale3d(1.1,1.1,1.1);
+        transform: scale3d(1.1,1.1,1.1);
+    }
+
+    40% {
+        -webkit-transform: scale3d(.9,.9,.9);
+        transform: scale3d(.9,.9,.9);
+    }
+
+    60% {
+        opacity: 1;
+        -webkit-transform: scale3d(1.03,1.03,1.03);
+        transform: scale3d(1.03,1.03,1.03);
+    }
+    80% {
+        -webkit-transform: scale3d(.97,.97,.97);
+        transform: scale3d(.97,.97,.97);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: scale3d(1,1,1);
+        transform: scale3d(1,1,1);
+    }
+}
+
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+
+.bounceIn {
+    -webkit-animation-name: bounceIn;
+    animation-name: bounceIn;
+}
+
+.bounceIn {
+    -webkit-animation-name: bounceIn;
+    animation-name: bounceIn;
+}
+
+.animated.bounceIn {
+    -webkit-animation-duration: .75s;
+    animation-duration: .75s;
+}
+
+
+.seeMore i {
+    width: 30px;
+    height: 30px; 
+    display: block;
+    background: url('../img/icon_arrow_light.svg') no-repeat center center #35bdf6;
+    background-size: 12px;
+    border-radius: 100%;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    z-index: 100;
+}
+
+.seeMore {
+    border-radius: 100%;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    opacity: 1;
+    left: 50%;
+    margin-left: -20px;
+    bottom: 20px;
+    cursor: pointer;
+  
+}
+
+.seeMore:before{
+    //content: "";
+    top: 0;
+    left: 0;
+    background-color: #35bdf6;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    position: absolute;
+    opacity: 0;
+    animation: pulse 1.8s 0.33333s ease-out ;
+    -webkit-animation: pulse 1.8s 0.33333s ease-out;
+    -ms-animation: pulse 1.8s 0.33333s ease-out ;
+    -moz-animation: pulse 1.8s 0.33333s ease-out;
+}
+
+// .seeMore:after {
+//     content: "";
+//     background-color: #35bdf6;
+//     width: 50px;
+//     height: 50px;
+//     border-radius: 100%;
+//     animation-fill-mode: both;
+//     -webkit-animation-fill-mode: both;
+//     animation-fill-mode: both;
+//     position: absolute;
+//     opacity: 0;
+//     animation: pulse 1.8s 0.66666s ease-out infinite;
+//     -webkit-animation: pulse 1.8s 0.66666s ease-out infinite;        
+// }
+
+
+
+
+
+
+/*
+<div class="see-more-button seeMore bounceIn animated"><i></i></div>
+*/

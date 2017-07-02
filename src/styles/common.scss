@@ -1,7 +1,13 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans|Pathway+Gothic+One|Roboto');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto|Fjalla+One|Josefin+Sans|Josefin+Slab|Pathway+Gothic+One');
 @import url('http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
+
 // font-family: 'Open Sans', sans-serif;
 // font-family: 'Roboto', sans-serif;
+// font-family: 'Fjalla One', sans-serif;
+// font-family: 'Pathway Gothic One', sans-serif;
+// font-family: 'Josefin Slab', serif;
+// font-family: 'Josefin Sans', sans-serif;
+
 
 $media-xs: 548px;
 $media-s: 768px;
@@ -9,9 +15,7 @@ $media-m: 932px;
 $media-l: 1280px;
 
 
-$background-color: #00c4c5;
-$background-gradient-from: #00c589;
-$background-gradient-to: #00afb0;
+$foreColor: #1d1d1d;
 
 
 * { 
@@ -45,11 +49,33 @@ html, body {
     margin-top: 0px;
 }
 
-.nav > li > a {
-    padding: 20px 16px;
-    display: block;
+
+.nav > li 
+{    
+    list-style:none;
+    text-align: center;
 }
 
+.nav > li > a {
+    padding: 20px 16px;
+    display: block;   
+    text-decoration: none;
+    font-weight: 600;
+    line-height: 75%;
+    font-family: 'Fjalla One', sans-serif;
+    color: #1d1d1d;
+    transition: color 200ms ease;    
+}
+
+
+.nav > li > a:hover {
+    color: #929292;
+}
+
+.nav > li > a:active {
+    color: #929292;
+    cursor: default;
+}
 
 .nav-container 
 {
@@ -106,7 +132,34 @@ html, body {
     height: 100vh;
 }
 
-.team
+
+.heading-base{
+      text-align: center;
+}
+
+.heading-primary {
+    @extend .heading-base;
+    padding: 100px 0;
+}
+
+
+.heading-top {
+    @extend .heading-base;
+    padding: 30px 0;
+}
+
+
+.overview{
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #00c4c5;
+    background: linear-gradient(to top,#00c589 0,#00afb0 100%);
+    height: 100vh;
+}
+
+
+.offers
 {
     overflow: hidden;
     background-size: cover;
@@ -128,22 +181,59 @@ html, body {
      height: 80vh;
 }
 
+
+
+/*TEXTING*/
+
+
+.container-mid
+{
+    max-width:900px;
+}
+
+.container-full, .container-main, .container-mid, .container-sm, .container-xs {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.container-center
+{
+    display:block;
+    text-align: center;
+}
+
+.text-container-center
+{
+    position: relative;
+    @extend .container-center;
+}
+
 /*FONTING*/
 h1{
     font-family: 'Open Sans', sans-serif;
     position: absolute;
-    color: white;
     font-weight: 300;
 }
 
 h2{
-    font-family: 'Open Sans', sans-serif;
+   font-weight: 100;
+   font-size: 160%;
+   color: $foreColor;
+   font-family: 'Josefin Sans', sans-serif;
 }
 
 h5{
    font-family:  'Pathway Gothic One',sans-serif;
    font-size: 133px;
 
+}
+
+
+.transparentShadow
+{
+    text-shadow: 0 2px 1px rgba(0,0,0,0.2);
 }
 
 @media only screen and (max-width: $media-xs){}

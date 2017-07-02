@@ -2,17 +2,11 @@
 <html lang="en">
 <head>
     <title>MADE IN NUSLE</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1, minimum-scale=1">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.4/jquery.fullpage.min.js"></script>
+    <script src="/bundle.js"></script>
 </head>
-<script language="javascript">
-    $(document).ready(function(){
-        $('#nav-icon4').click(function(){
-            $(this).toggleClass('open');
-            $('#nav-menu').toggleClass('open')
-        });
-    });
-</script>
 
 <style xmlns="http://www.w3.org/1999/xhtml" type="text/css" media="screen">
     
@@ -23,7 +17,8 @@
   </style>
 
 <body>
-    <div class="header">
+    <!--<div id="fullpage">-->
+        <div class="section header">
             <div class="video-text-container">                 
             	<video autoplay playsinline muted loop preload poster="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/oceanshot.jpg">
                     <source src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/ocean-small.webm" />
@@ -34,18 +29,29 @@
                 <defs>
                     <mask id="mask" x="0" y="0" width="100%" height="100%" >
                             <rect x="0" y="0" width="100%" height="100%" />
-                            <text x="112"  y="24">MADE</text>
-                            <text x="112"  y="44">IN</text>
-                            <text x="112"  y="64">NUSLE</text>
+                            <text x="112"  y="28">MADE</text>
+                            <text x="112"  y="48">IN</text>
+                            <text x="112"  y="68">NUSLE</text>
                     </mask>
                     <mask id="mask1" x="0" y="0" width="100%" height="100%" >
-                            <rect x="0" y="0" width="100%" height="100%" />
-                            <text x="82"  y="24">MADE</text>
-                            <text x="82"  y="44">IN NUSLE</text>
+                         <rect x="0"   y="0" width="100%" height="100%" />
+                            <text x="125"  y="24">M</text><text x="140.5"  y="24">I</text><text x="152"  y="24">N</text>
+                            <text x="125"  y="37">A</text><text x="138"  y="37">N</text><text x="152"  y="37"  transform="rotate(180,156.5,32.5)" >U</text>
+                            <text x="125"  y="50">D</text>                              <text x="152"  y="50">S</text>
+                            <text x="125"  y="63">E</text><text x="140"  y="63" >E</text><text x="152"  y="63" >L</text>
+
+                    </mask>
+                     <mask id="mask2" x="0" y="0" width="100%" height="100%" >
+                            <rect x="0"   y="0" width="100%" height="100%" />
+                            <text x="125"  y="24">M</text><text x="140.5"  y="24">I</text><text x="152"  y="24">N</text>
+                            <text x="125"  y="37">A</text><text x="138"  y="37">N</text><text x="152"  y="37" transform="rotate(180,156.5,32.5)" >U</text>
+                            <text x="125"  y="50">D</text>                              <text x="152"  y="50">S</text>
+                            <text x="125"  y="63">E</text><text x="140"  y="63" >E</text><text x="152"  y="63" >L</text>
+                                                                                        
                     </mask>
                      <mask id="mask3" x="0" y="0" width="100%" height="100%" >
                             <rect x="0" y="0" width="100%" height="100%" />
-                            <text x="40" y="44">MADE IN NUSLE</text>
+                            <text x="110" y="55">M.I.N</text>
                     </mask>
                 </defs>
                  <rect x="0" y="0" width="100%" height="100%" />
@@ -59,26 +65,103 @@
             </div>
             <nav id="nav-menu">
                 <ul class="nav">
-                    <li><a href="#overview">Přehled<a></li>
-                    <li><a href="#team">Team</a></li>
-                    <li><a href="#contact">Kontakt</a></li>
+                    <li id="overviewLink"><a href="#overview">Přehled</a></li>
+                    <li id="teamLink"><a href="#team">Team</a></li>
+                    <li id="offersLink"><a href="#offers">Služby</a></li>                    
+                    <li id="contactLink"><a href="#contact">Kontakt</a></li>
+                    <li id="signInLink"><a href="#signin">Přihlášení</a></li>
                 </ul>
             </nav>
+            <a href="#main" id="bounce" class="bounce">
+                 <i class="fa fa-caret-down fa-4x" id="caret-down" aria-hidden="true"></i>
+            </a>
     </div>
-    <div class="main">
-        <h1>main</h1>
-        <i class="fa fa-arrow-down" aria-hidden="true"></i>
+    <div id="main" class="section main" >
+        <div class="container-mid text-container-center">
+            <div class="heading-primary" >
+               <h2 class="transparentShadow">Vytvoříme s Vámi web ve třech krocích</h2>
+            </div>
+        </div> 
     </div>
-    <div class="team">
-        <h2>Team</h2>
+    <div id="#overview" class="section overview">
+        <div class="overview-container">
+                <div class="overview-item-right">
+                        <ul>
+                            <li>Lorem ipsum dolor sit amet, consectetur.</li>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                            <li>Lorem ipsum dolor sit amet.</li>
+                        </ul>
+                </div>
+                <div class="overview-item-left overview-item-dashboard">                
+                </div>
+         
+                <div class="overview-item-right overview-item-dashboard">
+                </div>
+                <div class="overview-item-left">              
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing.</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur.</li>
+                        <li>Lorem ipsum dolor sit.</li>
+                    </ul>
+                </div>
+            </div>
     </div>
-    <div class="main">
-        <h1>main</h1>
+    <div id="#team" class="section team">
+         <div class="container-mid text-container-center">
+            <div class="heading-top" >
+               <h2 class="transparentShadow">Náš Team</h2>
+
+                <div class="team-container">
+                   <div class="team-item">
+                       <div class="team-member"></div>
+                   </div>
+                   <div class="team-item">
+                       <div class="team-member"></div>
+                   </div>
+                   <div class="team-item">
+                       <div class="team-member"></div>
+                   </div>
+                   <div class="team-item">
+                       <div class="team-member"></div>
+                   </div>
+                   <div class="team-item">
+                       <div class="team-member"></div>
+                   </div>
+               </div>
+
+
+            </div>
+        </div>  
     </div>
-    <div class="footer">
+    <div id="#offers" class="offers">
+        <h1>offers</h1>
+    </div>
+    <div id="#footer" class="section footer">
         <h5><strong>FOOTER</strong></h5>
     </div>
     <div id="app"></div>
-    <script src="/bundle.js"></script>
+  <!--</div>-->
+
+    <script language="javascript">
+        $(document).ready(function(){
+            $('#nav-icon4').click(function(){
+                $(this).toggleClass('open');
+                $('#nav-menu').toggleClass('open')
+            });
+            $('#fullpage').fullpage({
+                anchors:['firstPage', 'secondPage', 'thirdPage','teamPage','footerPage']
+            });
+            $('#caret-down').click(function(){
+                $('.main').toggleClass('active');
+            });
+
+            $('#bounce').click(function(){
+                $('html, body').animate({
+                    scrollTop: $( $(this).attr('href') ).offset().top
+                }, 500);
+                return false;
+            });
+        });
+    </script>
 </body>
 </html>

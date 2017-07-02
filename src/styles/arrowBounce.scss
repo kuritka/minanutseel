@@ -1,0 +1,70 @@
+
+/*
+How to use that on the bottom
+*/
+
+$foreColor: #1d1d1d;
+
+@-moz-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -moz-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-5px);
+    transform: translateY(-5px);
+  }
+  
+}
+@-webkit-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+  }
+ 
+}
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  20% {
+    -moz-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+  }
+  
+}
+
+
+.bounce {
+  left:50%;
+  top: 89vh;
+  position: absolute;
+  cursor: pointer;
+  z-index: 5;
+  color: $foreColor;
+}
+
+.bounce:hover {
+  -moz-animation: bounce .8s ;
+  -webkit-animation: bounce .8s ;
+  -ms-animation: bounce .8s ;
+  -o-animation: bounce .8s ;
+  animation: bounce .8s ;
+}
+
+
+/*
+https://codepen.io/dodozhang21/pen/siKtp
+ <div class="bounce">
+    <i class="fa fa-caret-down fa-4x" aria-hidden="true"></i>
+ </div>
+*/
