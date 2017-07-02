@@ -23,10 +23,13 @@ import './styles/arrowBounce.scss';
 import './styles/sections/main.scss';
 import './styles/sections/team.scss';
 import './styles/sections/overview.scss';
+import './styles/sections/overview.animate.scss'; //generated from https://daneden.github.io/animate.css/ because wow.js works well with it
 
 
-//require('imports?this=>window!./_external/wow.js');
-import './../vendor/wow.js';
+import $ from 'jquery';
+import WOW from './../vendor/wow.js';
+ window.wow = new WOW.WOW({ live: false });
+
 
 
 

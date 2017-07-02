@@ -79,25 +79,25 @@
     <div id="main" class="section main" >
         <div class="container-mid text-container-center">
             <div class="heading-primary" >
-               <h2 class="transparentShadow">Vytvoříme s Vámi web ve třech krocích</h2>
+               <h2 class="transparentShadow wow fadeIn">Vytvoříme s Vámi web ve třech krocích</h2>
             </div>
         </div> 
     </div>
     <div id="#overview" class="section overview">
         <div class="overview-container">
                 <div class="overview-item-right">
-                        <ul>
+                        <ul class="wow slideInLeft">
                             <li>Lorem ipsum dolor sit amet, consectetur.</li>
                             <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
                             <li>Lorem ipsum dolor sit amet.</li>
                         </ul>
                 </div>
-                <div class="overview-item-left overview-item-dashboard">                
+                <div class="overview-item-left overview-item-dashboard wow slideInRight">                
                 </div>
          
-                <div class="overview-item-right overview-item-dashboard">
+                <div class="overview-item-right overview-item-dashboard wow slideInLeft">
                 </div>
-                <div class="overview-item-left">              
+                <div class="overview-item-left wow slideInRight">              
                     <ul>
                         <li>Lorem ipsum dolor sit amet, consectetur adipisicing.</li>
                         <li>Lorem ipsum dolor sit amet, consectetur.</li>
@@ -107,11 +107,11 @@
             </div>
     </div>
     <div id="#team" class="section team">
-         <div class="container-mid text-container-center">
+         <div class="container-mid text-container-center ">
             <div class="heading-top" >
                <h2 class="transparentShadow">Náš Team</h2>
 
-                <div class="team-container">
+                <div class="team-container wow fadeIn">
                    <div class="team-item">
                        <div class="team-member"></div>
                    </div>
@@ -160,6 +160,10 @@
                     scrollTop: $( $(this).attr('href') ).offset().top
                 }, 500);
                 return false;
+            });
+
+            window.wow.init({
+                offset: 50
             });
         });
     </script>
